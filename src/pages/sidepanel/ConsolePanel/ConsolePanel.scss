@@ -1,0 +1,29 @@
+.console-logs {
+
+	flex: 1;
+	max-height: 500px;
+	background-color: #EEE;
+	overflow-x: auto;
+	padding: 0 0.3125rem;
+	font-size: 12px;
+
+	.log-row {
+		margin-top: 5px;
+		border-top: 1px solid #DDD;
+		padding-top: 5px;
+
+		&.log { color: #999; }
+		&.info { color: default; }
+		&.warn { color: #FF9B50; }
+		&.error { color: #C63D2F; }
+	}
+
+	.is-danger {
+		pre {
+			color: red;
+			padding: 0;
+			background-color: transparent;
+		}
+
+	}
+}

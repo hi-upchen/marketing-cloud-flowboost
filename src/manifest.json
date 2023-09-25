@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "Sample Web Extension",
+  "version": "0.0.1",
+  "background": {
+    "service_worker": "background.ts",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "Click to open panel"
+  },
+  "side_panel": {
+    "default_path": "pages/sidepanel/sidepanel.html"
+  },
+  "permissions": [
+    "scripting",
+    "cookies",
+    "sidePanel",
+    "tabs",
+    "storage",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://*.exacttarget.com/",
+    "https://*.marketingcloudapps.com/*",
+    "https://*.exacttargetapis.com/*",
+    "https://*.marketingcloudapis.com/*",
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/*"
+  ],
+  "icons": {
+    "16": "assets/images/icon-16.png",
+    "48": "assets/images/icon-48.png",
+    "128": "assets/images/icon-128.png"
+  }
+}

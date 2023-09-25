@@ -1,0 +1,48 @@
+{
+  "name": "marketing-cloud-flowboost",
+  "version": "1.0.0",
+  "description": "A powerful Chrome extension to supercharge your Salesforce Marketing Cloud experience with journey builder flow enhancements.",
+  "scripts": {
+    "start": "parcel watch  --no-cache src/manifest.json",
+    "build": "parcel build  --no-cache src/manifest.json",
+    "clear_dist": "rm -fr dist/* && npm cache clean --force && rm -fr node_modules && rm -fr .parcel-cache"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hi-upchen/marketing-cloud-flowboost.git"
+  },
+  "keywords": [
+    "Marketing Cloud",
+    "Journey Builder"
+  ],
+  "author": "Up Chen",
+  "alias": {
+    "src": "./src"
+  },
+  "devDependencies": {
+    "@parcel/packager-webextension": "^2.9.3",
+    "@parcel/runtime-webextension": "^2.9.3",
+    "@parcel/transformer-sass": "^2.9.3",
+    "@parcel/transformer-up-webextension": "file:../transformer-webextension/parcel-transformer-up-webextension-2.9.3.tgz",
+    "@types/chrome": "^0.0.243",
+    "@types/react": "^18.2.18",
+    "@types/react-dom": "^18.2.7",
+    "autoprefixer": "^10.4.14",
+    "daisyui": "^3.5.1",
+    "parcel": "^2.9.3",
+    "postcss": "^8.4.27",
+    "process": "^0.11.10",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwindcss": "^3.3.3",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.4.2",
+    "@fortawesome/free-solid-svg-icons": "^6.4.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@tailwindcss/typography": "^0.5.9",
+    "date-fns": "^2.30.0",
+    "lodash": "^4.17.21"
+  }
+}
