@@ -1,6 +1,7 @@
 {
   "manifest_version": 3,
-  "name": "Sample Web Extension",
+  "name": "SFMC Journey Email Previews Sender",
+  "description": "Send previews for all emails in your journey, boosting productivity and efficiency. Say goodbye to the tedious task of selecting each email individually in Journey Builder.",
   "version": "0.0.1",
   "background": {
     "service_worker": "background.ts",
@@ -24,12 +25,11 @@
     "https://*.exacttarget.com/",
     "https://*.marketingcloudapps.com/*",
     "https://*.exacttargetapis.com/*",
-    "https://*.marketingcloudapis.com/*",
-    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/*"
+    "https://*.marketingcloudapis.com/*"
   ],
   "icons": {
-    "16": "assets/images/icon-16.png",
-    "48": "assets/images/icon-48.png",
-    "128": "assets/images/icon-128.png"
+    "16": "assets/images/send.png",
+    "48": "assets/images/send.png",
+    "128": "assets/images/send.png"
   }
 }

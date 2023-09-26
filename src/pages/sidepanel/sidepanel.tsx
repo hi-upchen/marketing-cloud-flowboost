@@ -106,7 +106,7 @@ const App: React.FC = () => {
         <button className="btn btn-default" onClick={handleGenerateError}>GenerateError</button>
       </div>
 
-      <h1>Console Logs</h1>
+      <h1 className="mt-3"></h1>
       <ConsolePanel />
     </div>
   );
